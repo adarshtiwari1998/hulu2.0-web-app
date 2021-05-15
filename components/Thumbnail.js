@@ -1,4 +1,4 @@
-import { ThumbUpIcon } from "@heroicons/react/outline";
+import { ChartSquareBarIcon, DocumentTextIcon, ThumbUpIcon, CalendarIcon, FolderIcon, FlagIcon, TrendingUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 
 function Thumbnail({ result }) {
@@ -18,17 +18,31 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
         width={1920}
       />
         <div className="p-2">
-        {/* movie overview */}
-        <p className="truncate max-w-md">{result.overview}</p>
+        <div className="flex items-center opacity-0 group-hover:opacity-100">
+         {/* movie trending type if exists */}
+        <TrendingUpIcon className="h-5 mx-2 text-white group-hover:font-normal" /> 
+        <h2 className="text-1.5xl text-white group-hover:font-normal">
+        {result.vote_average || `${result.vote_average}`}{""}</h2>
+         {/* movie like count if exists */}
+          <ThumbUpIcon className="h-5 mx-2 text-white group-hover:font-normal" />
+          <h2 className="text-1.5xl text-white group-hover:font-normal">
+           {result.vote_count}</h2>
+        </div>
         {/* movie title */}
-        <h2 className="mt-2 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">{result.title || result.original_name}</h2>
+        <h2 className="mb-2 truncate max-w-md text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">{result.title || result.original_name}</h2>
+          {/* movie overview */}
+         <p className="truncate max-w-md">{result.overview}</p>
         <p className="flex items-center opacity-0 group-hover:opacity-100">
         {/* category type if exists */}
-        {result.media_type && `${result.media_type} •`}{""}
+        <FolderIcon  className="h-5 mx-2" />
+        {result.media_type && `${result.media_type}`}{""}
         {/* movie release date if exists */}
-        {result.release_date || `${result.first_air_date} •`}{""}
-         {/* movie like count if exists */}
-        <ThumbUpIcon className="h-5 mx-2" /> {result.vote_count}
+        <CalendarIcon className="h-5 mx-2" /> {result.release_date || `${result.first_air_date}`}{""}
+        {/* movie original language if exists */}
+        <DocumentTextIcon className="h-5 mx-2" /> {result.original_language || `${result.original_language}`}{""}
+          {/* movie popularity if exists */}
+         <ChartSquareBarIcon className="h-5 mx-2" /> {result.popularity || `${result.popularity}`}{""}
+        
         
         </p>
       </div>

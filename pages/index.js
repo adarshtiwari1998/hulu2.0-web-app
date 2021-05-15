@@ -8,7 +8,7 @@ import requests from '../utils/requests';
 
 export default function Home({ results }) {
   // destructure the result
-  // console.log(props);
+  console.log(results);
   return (
     <div>
       <Head>

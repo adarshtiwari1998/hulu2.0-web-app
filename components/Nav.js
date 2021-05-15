@@ -8,7 +8,7 @@ function Nav() {
 
     return (
         <nav className="relative">
-          <div className="flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
+          <div className="flex px-10 py-2 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
                {/* fetch data from request of assign entries and get the title frm request*/}
               {Object.entries(requests).map(([key, {title, url}]) => (
           <h2 key={key} 
