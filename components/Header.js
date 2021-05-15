@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import HeaderItem from "./HeaderItem";
 import { BadgeCheckIcon, CollectionIcon, HomeIcon, LightningBoltIcon, SearchIcon, UsersIcon  } from "@heroicons/react/outline";
 

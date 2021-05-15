@@ -6,8 +6,9 @@ import requests from '../utils/requests';
 
 //this is render on client side
 
-export default function Home(props) {
-  console.log(props);
+export default function Home({ results }) {
+  // destructure the result
+  // console.log(props);
   return (
     <div>
       <Head>
@@ -16,7 +17,9 @@ export default function Home(props) {
       </Head>
         <Header />
          <Nav />
-         <Results />
+         {/* pass the result as props on result components */}
+         {/* it takes array as props and render on frontend */}
+         <Results results={results} />
     </div>
   );
 }
@@ -33,7 +36,7 @@ const request = await fetch (`https://api.themoviedb.org/3${requests[genre]?.url
 
 return {
   props: {
-    results: requests.results,
+    results: request.results,
   },
 };
 

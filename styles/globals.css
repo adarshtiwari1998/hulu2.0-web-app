@@ -9,4 +9,9 @@
   body {
    @apply bg-[#06202A] text-gray-300;
   }; 
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 }
