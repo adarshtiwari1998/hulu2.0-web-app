@@ -29,6 +29,8 @@
 
 #### Important command ####
 
+*** create next app with npx ***
+npx create-next-app [your app name]
 
 *** Install tailwind via npm ***
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
