@@ -30,6 +30,9 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
           <ThumbUpIcon className="h-5 mx-2 text-white group-hover:font-normal" />
           <h2 className="text-1.5xl text-white group-hover:font-normal">
            {result.vote_count}</h2>
+         {/* movie release date if exists */}
+         <CalendarIcon className="h-5 mx-2" />
+         <h2>{result.release_date || `${result.first_air_date}`}{""}</h2>
         </div>
         {/* movie title */}
         <h2 className="mb-2 truncate max-w-md text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">{result.title || result.original_name}</h2>
@@ -39,8 +42,6 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
         {/* category type if exists */}
         <FolderIcon  className="h-5 mx-2" />
         {result.media_type && `${result.media_type}`}{""}
-        {/* movie release date if exists */}
-        <CalendarIcon className="h-5 mx-2" /> {result.release_date || `${result.first_air_date}`}{""}
         {/* movie original language if exists */}
         <DocumentTextIcon className="h-5 mx-2" /> {result.original_language || `${result.original_language}`}{""}
           {/* movie popularity if exists */}
