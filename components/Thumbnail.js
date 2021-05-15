@@ -46,8 +46,6 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
         <DocumentTextIcon className="h-5 mx-2" /> {result.original_language || `${result.original_language}`}{""}
           {/* movie popularity if exists */}
          <ChartSquareBarIcon className="h-5 mx-2" /> {result.popularity || `${result.popularity}`}{""}
-        
-        
         </p>
       </div>
         </div>
