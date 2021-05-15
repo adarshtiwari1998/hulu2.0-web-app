@@ -1,3 +1,13 @@
+<h3>Technology we are using</h3>
+
+**********************************************
+ 
+ ***Live Website url***
+ 
+<a href="https://hulu2-0-web-app-adarsh.vercel.app/">https://hulu2-0-web-app-adarsh.vercel.app/</a>
+
+**********************************************
+
 # next.js
 # taliwind css
 # rest api
@@ -6,6 +16,7 @@
 # tmdb api
 # flex box
 # css grid
+
 
 *** nextjs is server side rendering , suppose user have request https://hulu-2.0-adarsh-web.app on browsers, so by default the next.js server are installed on my browsers and when users request our website on browsers, so the next.js render the require data with help of props with help of  javascript, this means users are seen are page very immediately.  ***
 
@@ -45,3 +56,15 @@ npm install react-flip-move
 <a href="https://heroicons.dev/">https://heroicons.dev/</a>
 
 
+*** Tailwind css docs ***
+<a href="https://tailwindcss.com/docs">https://tailwindcss.com/docs</a>
+
+
+
+**********************************************
+ 
+ ***Live Website url***
+ 
+<a href="https://hulu2-0-web-app-adarsh.vercel.app/">https://hulu2-0-web-app-adarsh.vercel.app/</a>
+
+**********************************************
