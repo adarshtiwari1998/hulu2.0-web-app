@@ -1,13 +1,16 @@
 import { ChartSquareBarIcon, DocumentTextIcon, ThumbUpIcon, CalendarIcon, FolderIcon, FlagIcon, TrendingUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
+import { forwardRef } from "react";
 
-function Thumbnail({ result }) {
+// this forwardref is used to get reference in the parent components
+const Thumbnail = forwardRef(({ result }, ref) => {
 
 //base url of imdb movie images
 const BASE_URL = "https://image.tmdb.org/t/p/original";
 
     return (
-        <div className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 ">
+        // get animation mark here to type ref
+        <div ref={ref} className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 ">
            <Image
         layout="responsive"
         src={
@@ -48,6 +51,6 @@ const BASE_URL = "https://image.tmdb.org/t/p/original";
       </div>
         </div>
     );
-}
+});
 
 export default Thumbnail
