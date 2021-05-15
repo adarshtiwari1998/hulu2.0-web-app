@@ -29,3 +29,5 @@ _rfce      ,command for create a function components
 *** Install heroicon via npm *** 
 npm install @heroicons/react
 
+*** hide tailwind scrollbar via npm ***
+npm install tailwind-scrollbar-hide
