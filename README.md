@@ -55,6 +55,11 @@ npm install tailwind-scrollbar-hide
 *** Install react flipmove via npm ***
 npm install react-flip-move 
 
+
+*** next.js  docs ***
+<a href="https://nextjs.org/docs">https://nextjs.org/docs</a>
+
+
 *** heroicons url ***
 <a href="https://heroicons.dev/">https://heroicons.dev/</a>
 
